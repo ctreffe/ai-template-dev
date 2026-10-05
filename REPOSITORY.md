@@ -2,7 +2,7 @@
 
 # Repository Standards
 
-This document describes repository-level standards used by the AGIT Dev Template.
+This document describes repository-level standards used by the AI Dev Template.
 
 It focuses on repository organization, Git usage, versioning, release handling and repository-ready delivery for projects created from the template.
 
@@ -12,11 +12,11 @@ It focuses on repository organization, Git usage, versioning, release handling a
 
 Repository names should be clear, descriptive and stable.
 
-For new AGIT repositories, prefer kebab-case names, for example:
+For new repositories, prefer kebab-case names, for example:
 
 ```text
-agit-project-template
-agit-dev-template
+ai-template-project
+ai-template-dev
 agit-windows-deployment-kit
 ```
 
@@ -52,8 +52,7 @@ closure. Avoid a last-commit badge because recent activity is not a quality,
 validation or release signal.
 
 Derived projects adapt the badges to their own documented status, completed
-version, actual license and available automation. They do not retain the AGIT
-Dev Template version as the project version and do not advertise checks or
+version, actual license and available automation. They do not retain the AI Dev Template version as the project version and do not advertise checks or
 releases that do not exist. English and German badge blocks remain identical
 when both READMEs are maintained.
 
@@ -330,7 +329,7 @@ Feature work should not be hidden inside a milestone commit. A milestone commit 
 
 Version tags should mark meaningful completed project states.
 
-For future AGIT projects, version tags should use a leading `v`, for example:
+For future projects, version tags should use a leading `v`, for example:
 
 ```text
 v0.1.0
@@ -401,13 +400,13 @@ Translations should be complete and consistent, not partially localized copies.
 
 Derived repositories should preserve required template elements unless intentionally changed.
 
-The AI Collaboration Note in `README.md` and `README.de.md` is a required repository-visible element for AGIT projects. It should remain directly below the README badges and preserve the original disclosure purpose. Derived projects may adapt project-specific wording when the literal template wording would be inaccurate, but the note should still clearly disclose AI collaboration and point readers to `COLLABORATION.md`.
+The AI Collaboration Note in `README.md` and `README.de.md` is a required repository-visible element for projects. It should remain directly below the README badges and preserve the original disclosure purpose. Derived projects may adapt project-specific wording when the literal template wording would be inaccurate, but the note should still clearly disclose AI collaboration and point readers to `COLLABORATION.md`.
 
 ---
 
 # Derived Projects
 
-Repositories created from the AGIT Dev Template should preserve their
+Repositories created from the AI Dev Template should preserve their
 initialization provenance and maintain their project rules after setup.
 
 Keep these initialization files under their original names unless the

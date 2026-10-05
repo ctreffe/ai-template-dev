@@ -1,7 +1,7 @@
 # Project Context Template
 
 Use this file as the current-state re-entry point in a project created from the
-AGIT Dev Template. Replace the placeholders during initialization and keep the
+AI Dev Template. Replace the placeholders during initialization and keep the
 result focused on present intent, baseline, active work, validation and next
 steps. History belongs in `CHANGELOG.md`; durable rationale belongs in Decision
 Records; detailed methods belong in the relevant domain documents.
@@ -9,7 +9,7 @@ Records; detailed methods belong in the relevant domain documents.
 ## Template Lineage and Initialization
 
 - **Repository role:** `<derived project>`
-- **Source template:** AGIT Dev Template
+- **Source template:** AI Dev Template
 - **Initial template baseline:** `<version and commit>`
 - **Initialization:** `<not started | in progress | completed; date>`
 - **Last template harmonization:** `<not yet | baseline and date>`

@@ -1,17 +1,17 @@
-# AGIT Dev Template
+# AI Dev Template
 
 [![Status](https://img.shields.io/badge/status-stable-green)](VERSION)
-[![Version](https://img.shields.io/github/v/tag/ctreffe/agit-dev-template?label=version)](CHANGELOG.md)
-[![License](https://img.shields.io/github/license/ctreffe/agit-dev-template)](LICENSE)
+[![Version](https://img.shields.io/github/v/tag/ctreffe/ai-template-dev?label=version)](CHANGELOG.md)
+[![License](https://img.shields.io/github/license/ctreffe/ai-template-dev)](LICENSE)
 
 > [!NOTE]
 > **AI Collaboration**
 >
-> This repository maintains the AGIT Dev Template.
+> This repository maintains the AI Dev Template.
 >
-> The AGIT Dev Template is the development-oriented specialization of the generic AGIT Project Template.
+> The AI Dev Template is the development-oriented specialization of the generic AI Project Template.
 >
-> The collaboration model documents engineering practices, AI-assisted development workflows and repository conventions used by development-oriented AGIT projects.
+> The collaboration model documents engineering practices, AI-assisted development workflows and repository conventions used by development-oriented projects.
 >
 > Its collaboration model is maintained in [COLLABORATION.md](COLLABORATION.md).
 
@@ -25,7 +25,7 @@
 
 - [Overview](#overview)
 - [Core Principle](#core-principle)
-- [AGIT Templateverse](#agit-templateverse)
+- [AI Templateverse](#ai-templateverse)
 - [When to Use This Template](#when-to-use-this-template)
 - [Project Initialization](#project-initialization)
 - [External Files and Sources](#external-files-and-sources)
@@ -43,9 +43,9 @@
 
 ## Overview
 
-The AGIT Dev Template is the starting point for development-oriented projects involving code, scripts, automation, technical architecture, validation, releases and user-facing technical documentation. It provides a reusable repository foundation and collaboration method rather than a programming framework or application scaffold.
+The AI Dev Template is the starting point for development-oriented projects involving code, scripts, automation, technical architecture, validation, releases and user-facing technical documentation. It provides a reusable repository foundation and collaboration method rather than a programming framework or application scaffold.
 
-The template combines maintainer-owned intent with roadmap-first implementation, small reviewable changes, explicit validation, durable project context, documented technical decisions and repository-ready delivery. It builds on the generic AGIT Project Template and adds engineering-specific expectations for code readability, sensitive inputs, generated outputs and release discipline.
+The template combines maintainer-owned intent with roadmap-first implementation, small reviewable changes, explicit validation, durable project context, documented technical decisions and repository-ready delivery. It builds on the generic AI Project Template and adds engineering-specific expectations for code readability, sensitive inputs, generated outputs and release discipline.
 
 ## Core Principle
 
@@ -53,13 +53,13 @@ The maintainer owns the project direction, architecture and release decisions. T
 
 The repository is the authoritative engineering state. Code and documentation should be understandable to future maintainers without private chat history, and a change is not complete merely because it worked once.
 
-## AGIT Templateverse
+## AI Templateverse
 
-The public AGIT templates form a small templateverse: a family of related templates that share a repository-first, maintainer-led Human-AI collaboration model while specializing it for different project types.
+The public AI templates form a small templateverse: a family of related templates that share a repository-first, maintainer-led Human-AI collaboration model while specializing it for different project types.
 
-- [AGIT Project Template](https://github.com/ctreffe/agit-project-template) is the generic starting point for structured project work, research, planning, concept work, process design and mixed projects.
-- [AGIT Dev Template](https://github.com/ctreffe/agit-dev-template) is for development-oriented projects where code, scripts, automation, validation, architecture or release workflows are central.
-- [AGIT Documentation Template](https://github.com/ctreffe/agit-docs-template) is for technical documentation projects such as user guides, admin guides, operating procedures, tutorials, migration guides and documentation sites.
+- [AI Project Template](https://github.com/ctreffe/ai-template-project) is the generic starting point for structured project work, research, planning, concept work, process design and mixed projects.
+- [AI Dev Template](https://github.com/ctreffe/ai-template-dev) is for development-oriented projects where code, scripts, automation, validation, architecture or release workflows are central.
+- [AI Documentation Template](https://github.com/ctreffe/ai-template-docs) is for technical documentation projects such as user guides, admin guides, operating procedures, tutorials, migration guides and documentation sites.
 
 ## When to Use This Template
 
@@ -305,7 +305,7 @@ Development projects should retain practices that have proven useful and remove 
 
 Use `$sync-template` to compare a project with its verified source-template baseline and adopt selected developments. Use `$check-consistency` separately to diagnose contradictions among implementation, tests, documentation and roadmap, and `$perform-retrospective` to evaluate collaboration, engineering handoffs, validation strategy and work rhythm. A finding becomes a template candidate only after its transferability, maintenance cost and effect on different development projects have been considered.
 
-The maintainer coordinates cross-template evolution in a private governance repository named `agit-templateverse`. It records shared conventions, deliberate specializations and evidence from derived projects. The repository is intentionally not linked because template users do not need access to it.
+The maintainer coordinates cross-template evolution in a private governance repository named `ai-templateverse`. It records shared conventions, deliberate specializations and evidence from derived projects. The repository is intentionally not linked because template users do not need access to it.
 
 Governance coordination does not create hidden engineering requirements. Every change that affects this template must be represented here through maintained guidance, Decision Records where appropriate, the changelog and release history. Reusable improvements must keep code, tests, configuration and user-facing documentation aligned and must not overfit one implementation experience.
 

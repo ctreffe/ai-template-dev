@@ -6,6 +6,11 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+- Adopt AI Dev Template and `ai-template-dev` in current identity, public
+  links, engineering/setup guidance, mapping examples and skill references
+  under TVDR-0042/0043. Preserve historical provenance, MIT licensing and
+  engineering, release and Git authority.
+
 - Implement IDEA-0020 under TVDR-0041. Normal sandboxed execution remains
   preferred when equally effective; already authorized in-scope actions request
   the narrowest sufficient platform escalation when technically required,

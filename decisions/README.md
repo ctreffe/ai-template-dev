@@ -1,6 +1,6 @@
 # Decision Records
 
-This directory is the default location for durable decision records in development-oriented AGIT projects.
+This directory is the default location for durable decision records in development-oriented projects.
 
 Use the record type that matches the decision:
 

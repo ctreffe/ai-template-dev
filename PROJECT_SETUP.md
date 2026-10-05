@@ -2,13 +2,13 @@
 
 # Project Setup Guide
 
-This document describes how to initialize a new project from the AGIT Dev Template.
+This document describes how to initialize a new project from the AI Dev Template.
 
 It is primarily used during project creation and should normally remain in a
 derived repository as initialization provenance. Record its lifecycle status
 and the template lineage in `PROJECT_CONTEXT.md`.
 
-Use this template for development-oriented AGIT projects. For general non-development projects, start from the generic AGIT Project Template instead.
+Use this template for development-oriented projects. For general non-development projects, start from the generic AI Project Template instead.
 
 ## Lean initialization contract
 
@@ -46,7 +46,7 @@ mandatory when triggered; the limit does not weaken those gates.
 
 # 1. Create the Repository
 
-Create a new repository from the AGIT Dev Template.
+Create a new repository from the AI Dev Template.
 
 After creating the repository, establish the first working baseline:
 
@@ -91,11 +91,11 @@ If both are kept, maintain them as structurally aligned translations.
 
 ## Required AI Collaboration Note
 
-Every AGIT project README should include an AI Collaboration Note directly below the badges.
+Every project README should include an AI Collaboration Note directly below the badges.
 
 The note is a standardized disclosure element. It should preserve the purpose, position and level of visibility of the template note, but the wording must remain factually correct for the derived project.
 
-For the AGIT Dev Template itself, the note states that the repository maintains the AGIT Dev Template. For derived projects, adapt that project-specific sentence so it accurately describes the collaboration in the derived repository, while still pointing readers to `COLLABORATION.md`.
+For the AI Dev Template itself, the note states that the repository maintains the AI Dev Template. For derived projects, adapt that project-specific sentence so it accurately describes the collaboration in the derived repository, while still pointing readers to `COLLABORATION.md`.
 
 The derived note should also include one concrete sentence describing what the collaboration model documents in the project, such as engineering practices, collaboration workflows, validation expectations, handoff rules or repository conventions.
 
@@ -126,7 +126,7 @@ workflows actually exist. Do not use a last-commit badge by default because
 recent activity is not evidence of quality or readiness.
 
 Keep English and German badge blocks identical when both READMEs are present.
-Record the AGIT Dev Template version and commit in `PROJECT_CONTEXT.md`, not as
+Record the AI Dev Template version and commit in `PROJECT_CONTEXT.md`, not as
 the derived project's version badge.
 
 ---
@@ -184,7 +184,7 @@ At minimum, review and update:
 - open decisions
 - relevant documents
 - Collaboration Model version
-- AGIT Dev Template version
+- AI Dev Template version
 
 Keep this document concise. Its purpose is to help a maintainer, contributor or AI assistant quickly understand where the project stands today.
 
@@ -258,7 +258,7 @@ Review `COLLABORATION.md`.
 
 The file should usually be kept unchanged unless the derived project has a specific reason to adjust the Collaboration Model.
 
-If the AGIT Dev Template contains a newer version of the Collaboration Model, prefer adopting the newer version.
+If the AI Dev Template contains a newer version of the Collaboration Model, prefer adopting the newer version.
 
 ---
 
@@ -319,7 +319,7 @@ These should normally remain ignored by Git unless the derived project intention
 
 Review `PHILOSOPHY.md`.
 
-The file should usually remain stable across AGIT projects.
+The file should usually remain stable across projects.
 
 Only change it if the derived project intentionally follows different engineering principles.
 
@@ -335,7 +335,7 @@ For most derived projects, the first meaningful project milestone should be:
 0.1.0
 ```
 
-Future AGIT projects should use version tags with a leading `v`, for example:
+Future projects should use version tags with a leading `v`, for example:
 
 ```text
 v0.1.0
@@ -359,13 +359,13 @@ and include the completed version number.
 Example summary:
 
 ```text
-chore: initialize project from AGIT template
+chore: initialize project from AI template
 ```
 
 Example description:
 
 ```text
-Initialize the project from the AGIT Dev Template.
+Initialize the project from the AI Dev Template.
 
 Review and adapt the README files, core project documents and repository
 metadata for the new project. Capture maintainer project intent and establish
@@ -453,14 +453,14 @@ When working with AI assistance:
 
 # 18. Retrospectives and Template Feedback
 
-During project work, collect findings that may improve the AGIT Dev Template or the generic AGIT Project Template.
+During project work, collect findings that may improve the AI Dev Template or the generic AI Project Template.
 
 Template changes should not be made casually during normal project work. Instead, review collected findings in a retrospective.
 
 The maintainer decides when to invoke a retrospective and which project period
 it should cover.
 
-Only changes that have proven useful in real project work should be considered for inclusion in the AGIT Dev Template.
+Only changes that have proven useful in real project work should be considered for inclusion in the AI Dev Template.
 
 When a retrospective changes core process guidance, update all affected template documents consistently instead of appending isolated notes.
 

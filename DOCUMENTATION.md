@@ -2,7 +2,7 @@
 
 # Documentation Standards
 
-This document describes documentation standards used by the AGIT Dev Template.
+This document describes documentation standards used by the AI Dev Template.
 
 Documentation is treated as part of the software. It should be maintained with the same care as implementation code.
 
@@ -68,7 +68,7 @@ It records completed changes by version. It should not replace `PROJECT_CONTEXT.
 
 ## COLLABORATION.md
 
-The AGIT Collaboration Model.
+The AI Collaboration Model.
 
 It describes how the maintainer and AI assistant collaborate, including repository-ready delivery, roadmap-first work and validation expectations.
 
@@ -200,7 +200,7 @@ When repository documentation is updated with AI assistance, the assistant shoul
 
 Keep the general collaboration model and local execution rules separate.
 
-- `COLLABORATION.md` documents the general AGIT Collaboration Model.
+- `COLLABORATION.md` documents the general AI Collaboration Model.
 - `AGENTS.md` contains the resident safety and routing contract.
 - `PROJECT_SETUP.md` explains how to prepare a local project environment.
 - `PROJECT_CONTEXT.md` describes the current state of a derived project after setup.

@@ -2,9 +2,9 @@
 
 # Project Philosophy
 
-This document describes the engineering philosophy shared by projects created from the AGIT Dev Template.
+This document describes the engineering philosophy shared by projects created from the AI Dev Template.
 
-The AGIT Dev Template builds on the generic AGIT Project Template and adds development-specific expectations for code, validation, releases, repository structure and technical decisions.
+The AI Dev Template builds on the generic AI Project Template and adds development-specific expectations for code, validation, releases, repository structure and technical decisions.
 
 It complements the Collaboration Model in `COLLABORATION.md`. The Collaboration Model describes how work is coordinated. This document describes the engineering values behind that work.
 
@@ -176,7 +176,7 @@ Unnecessary complexity should be removed whenever practical.
 
 The goal is steady evolution rather than constant reinvention.
 
-The AGIT Dev Template itself evolves through retrospectives based on real project experience.
+The AI Dev Template itself evolves through retrospectives based on real project experience.
 
 ---
 
