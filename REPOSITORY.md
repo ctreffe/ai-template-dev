@@ -38,6 +38,18 @@ A good repository description helps a visitor quickly understand the scope of th
 
 ---
 
+## Project introductions and inherited workflow guides
+
+New project initialization follows the four-file contract in `PROJECT_SETUP.md`:
+`README.md` and `README.de.md` introduce the project; `TEMPLATE_README.md` and
+`TEMPLATE_README.de.md` retain adapted workflow and skill guidance. Both language
+pairs are required and link to one another by role and language. Project README
+badge policy applies to the project pair; retained guides omit inherited badges.
+Keep guides aligned with actual retained files and skills and local accepted
+rules. Selected upstream README updates map to the guides through `sync-template`
+without replacing the project introductions. Source maintenance checkouts retain
+their own README pair; the extra files exist only after project initialization.
+
 # README Badge Policy
 
 Template repositories use a compact badge block directly below the README
@@ -54,7 +66,7 @@ validation or release signal.
 Derived projects adapt the badges to their own documented status, completed
 version, actual license and available automation. They do not retain the AI Dev Template version as the project version and do not advertise checks or
 releases that do not exist. English and German badge blocks remain identical
-when both READMEs are maintained.
+for the required project README pair; retained guides omit inherited badges.
 
 ---
 
@@ -429,7 +441,8 @@ The following documents usually remain part of the derived project:
 
 - `PROJECT_CONTEXT.md`
 - `README.md`
-- `README.de.md` where useful
+- `README.de.md`
+- `TEMPLATE_README.md` and `TEMPLATE_README.de.md`
 - `CHANGELOG.md`
 - `AGENTS.md` as the automatic agent entry point
 - `COLLABORATION.md`

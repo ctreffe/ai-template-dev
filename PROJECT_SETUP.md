@@ -10,6 +10,70 @@ and the template lineage in `PROJECT_CONTEXT.md`.
 
 Use this template for development-oriented projects. For general non-development projects, start from the generic AI Project Template instead.
 
+## Project READMEs and retained template guides
+
+Initialization creates four required root documents. Keep `README.md` and
+`README.de.md` as the English project introduction and its close German
+translation. Retain the inherited operating guidance in `TEMPLATE_README.md`
+and `TEMPLATE_README.de.md`, adapted for the initialized project. Source-template
+maintenance checkouts keep their original README pair; do not initialize them
+or add duplicate guide files.
+
+After the fundamentals and applicable access gates are settled, inspect all
+four paths before changing inherited README content. Rename each confirmed
+inherited README to its corresponding `TEMPLATE_README*` path without overwrite,
+then create the project pair. Preserve existing changes. For interrupted setup,
+verify which files are inherited guides and which are project introductions,
+continue only the missing work and never rename a project introduction into a
+guide. Resume adaptation of a verified partial guide while preserving unrelated
+edits; do not replace it with another inherited README. Stop conflicting file
+replacements for bounded resolution; do not delete or overwrite unknown content.
+If an inherited language is missing, translate verified authorized content and
+report the evidence limit;
+do not invent an upstream baseline. Keep incomplete setup visibly pending.
+
+The project pair explains purpose, audience, current state, setup or use and
+relevant project files. Link early to the corresponding guide under
+"Workflows and Skills" / "Workflows und Skills". Keep the AI Collaboration Note
+near the top, project-specific identity and truthful badges where applicable,
+and the actual license reference at the bottom. Do not duplicate the full skill
+catalog or claim planned functionality already exists.
+
+Adapt the retained guide rather than treating it as an immutable archive:
+
+- Give it a guide title, a factually correct AI Collaboration Note and a short
+  origin explanation linking to `PROJECT_CONTEXT.md` for source-template
+  version, commit and synchronization baseline. Link back to the corresponding
+  project introduction. Local `AGENTS.md`, domain rules and accepted project
+  decisions remain authoritative; the guide is operating documentation.
+- Preserve workflow and domain guidance. Remove or reframe source-maintenance,
+  repository-creation and completed one-time initialization instructions so
+  they are not presented as ongoing project tasks.
+- Align skill catalogs, file descriptions and contents with the final retained
+  inventory. Remove local links to deleted files or skills, including
+  `create-local-project` and template-only `IDEAS.md`. Source-only capabilities
+  may be explained without implying local availability. Retain a deliberately
+  established project backlog and applicable control-plane creation skills.
+- Remove inherited status, version, license and automation badges from both
+  guides; their local targets would otherwise describe the project as the
+  template. Preserve required attribution and license notices. Distinguish
+  source provenance from the actual project rights in the closing license
+  section without changing licensing or requiring private upstream access.
+- Keep all four files at the root. Use reciprocal language links within each
+  pair, repair links and contents after adaptation, and review both pairs for
+  close structural and semantic translation. Project badge blocks match across
+  languages; guides have no inherited badge blocks.
+
+Before declaring initialization successful, review all four files, their
+language and project/guide navigation, current skill/file links, identity,
+badges, license wording and domain safeguards against the final cleanup plan.
+After authorized successful cleanup, verify that navigation matches the actual
+remaining inventory. If this fails, report initialization as incomplete rather
+than claiming a usable four-file result. `sync-template` maps later upstream
+README changes to the retained guides, preserving project adaptations and the
+project introductions. Existing active projects require separately selected
+adoption; this contract does not reinitialize them.
+
 ## Lean initialization contract
 
 Before the normal questionnaire, `$start-project` asks one concise,
@@ -79,15 +143,16 @@ Avoid promotional or marketing-oriented wording.
 Review and adapt the user-facing documentation:
 
 - `README.md`
-- `README.de.md`, if useful
+- `README.de.md`
+- `TEMPLATE_README.md`
+- `TEMPLATE_README.de.md`
 
 The English README is the primary project documentation.
 
 It should explain setup, configuration and productive use clearly enough that a new user can reach a successful first use without private maintainer context. If the project exposes commands, scripts, settings, profiles or operational workflows, add concise reference documentation or link to the appropriate reference document.
 
-The German README may be kept, updated or removed depending on the target audience of the derived project.
-
-If both are kept, maintain them as structurally aligned translations.
+The German project README is required. Maintain both project READMEs and both
+retained guides as close structural and semantic translations within each pair.
 
 ## Required AI Collaboration Note
 
@@ -102,7 +167,7 @@ The derived note should also include one concrete sentence describing what the c
 Before completing project setup, verify that:
 
 - `README.md` contains an English AI Collaboration Note below the badges
-- `README.de.md`, if kept, contains a German AI Collaboration Note below the badges
+- `README.de.md` contains a German AI Collaboration Note below the badges
 - the note describes what the collaboration model documents for the derived project
 - both notes point to `COLLABORATION.md`
 - no generated project update has replaced the note with a shortened variant
@@ -125,7 +190,8 @@ release or automation badge only when the corresponding tags, releases or
 workflows actually exist. Do not use a last-commit badge by default because
 recent activity is not evidence of quality or readiness.
 
-Keep English and German badge blocks identical when both READMEs are present.
+Keep English and German project README badge blocks identical. Retained
+template guides omit inherited badge blocks.
 Record the AI Dev Template version and commit in `PROJECT_CONTEXT.md`, not as
 the derived project's version badge.
 
@@ -208,7 +274,9 @@ The following documents usually remain in the derived project:
 
 - `PROJECT_CONTEXT.md`
 - `README.md`
-- `README.de.md` where useful
+- `README.de.md`
+- `TEMPLATE_README.md`
+- `TEMPLATE_README.de.md`
 - `CHANGELOG.md`
 - `AGENTS.md` as the automatic agent entry point
 - `COLLABORATION.md`
