@@ -27,8 +27,15 @@ prove that behavior, usability or safety requirements are met.
 Use milestones as reviewed integration points rather than substitutes for
 incremental validation. Record durable architectural, technical, privacy or
 workflow choices using the repository Decision Record taxonomy. Keep ordinary
-commit preparation separate from milestone closure and every protected Git
-action independently authorized.
+commit preparation separate from milestone closure and preserve protected Git
+authority, including the bounded commit-and-push workflow below.
+
+Within `commit-changes` or `commit-milestone`, repository-specific explicit
+commit authorization includes the commit and its normal push to the verified
+existing upstream unless the maintainer excludes push. Skill invocation alone
+grants no Git authority. Force-push, other refs, remote changes, tags and release
+publication remain outside this bundle; other protected actions still need
+separate authority. This changes neither content-access nor publication rules.
 
 When an applicable repository rule requires a control word, accompany the
 request with one minimal copy-ready suggested instruction naming the exact
@@ -77,16 +84,14 @@ diagnostics.
 
 ## Completion
 
-On a recurring equivalent tool failure or immediate setup, policy, permission
-or dependency-environment failure, pause and use `troubleshoot-environment`.
-Describe only the problem before the maintainer chooses an undocumented quick
-exit or focused resolution; explicit invocation for a concrete problem enters
-resolution directly. Only resolution loads or writes incident records and it
-verifies repair at the exact engineering checkpoint or a pre-agreed standalone
-acceptance test. Request elevated authority proactively when it enables an
-effective durable repair, state its scope and consequence, and leave the
-security judgment to the maintainer. Troubleshooting grants no dependency
-installation, input, secret, Git, external-operation or publication authority.
+For a clear access, authorization or setup failure, or a recurring execution
+mistake, use `reuse-fixes` to consult this repository's confirmed experience
+before repeating the failed approach. Apply an authorized correction, verify
+it at the original checkpoint and retain concise prevention. Ask only for
+missing authority or a material decision; there is no mandatory route-choice
+menu. Keep experience repository-local and host facts in the ignored local
+record. Do not collect or transfer lessons between repositories. All existing
+access, security, installation, Git and publication boundaries remain in force.
 
 Work is ready for review when its requested behavior is implemented, relevant
 tests and documentation agree, repository state is preserved, limitations are

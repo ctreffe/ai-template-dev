@@ -28,6 +28,7 @@
 - [AI Templateverse](#ai-templateverse)
 - [When to Use This Template](#when-to-use-this-template)
 - [Project Initialization](#project-initialization)
+- [Collaboration Skills](#collaboration-skills)
 - [External Files and Sources](#external-files-and-sources)
 - [Temporary Working Files](#temporary-working-files)
 - [Project Materials](#project-materials)
@@ -107,6 +108,59 @@ and `TASK_HANDOFF.md` is replaced with project-owned state. The template-only
 `IDEAS.md`, the project's copy of `$create-local-project` and their references
 are removed unless a project-local idea backlog is deliberately established.
 The initialization files remain as provenance.
+
+## Collaboration Skills
+
+Skills are scoped workflows in [`.agents/skills/`](.agents/skills/). They guide
+the agent through a particular task and load the relevant repository guidance.
+Invoke a skill in chat with `$skill-name`, for example
+`$review-project`. The linked skill files describe each full workflow.
+
+- **Agent or explicit:** The agent may select the skill when the task fits;
+  you can also invoke it directly.
+- **Explicit:** The skill needs a deliberate invocation or explicit maintainer
+  selection. An agent suggestion does not activate it.
+
+Selecting a skill grants no additional permission for protected Git actions,
+installation, external transmission or publication. Local access and domain
+rules apply to every workflow.
+
+In `commit-changes` and `commit-milestone`, explicit commit authorization for
+this repository includes its normal push to the verified existing upstream.
+Specify "commit only" or "no push" to exclude it. Other Git actions, tags and
+release publication still need their own authorization.
+
+`reuse-fixes` reads and updates only this repository's error knowledge. It does
+not collect lessons across repositories or maintain global memory.
+Active fixes use 4–8 lines per case in `TROUBLESHOOTING.md`.
+[Detailed evidence](TROUBLESHOOTING_DETAILS.md) is preserved separately;
+read only a matching detail section when needed.
+
+| Skill | Invocation | Purpose |
+| --- | --- | --- |
+| [`start-task`](.agents/skills/start-task/SKILL.md) | Agent or explicit | Reconstruct only the context needed for a new bounded task. |
+| [`handoff-task`](.agents/skills/handoff-task/SKILL.md) | Agent or explicit | Save the task outcome, evidence and next step in a compact `TASK_HANDOFF.md`. |
+| [`commit-changes`](.agents/skills/commit-changes/SKILL.md) | Agent or explicit | Create an ordinary scoped commit and perform its normal upstream push with explicit commit authorization, unless push is excluded. |
+| [`record-decision`](.agents/skills/record-decision/SKILL.md) | Agent or explicit | Document a durable decision using the applicable record type; source-template decisions route to Governance. |
+| [`reuse-fixes`](.agents/skills/reuse-fixes/SKILL.md) | Agent or explicit | Reuse this repository's confirmed fixes, retain concise prevention and ask only for missing authority or blocking decisions. |
+| [`start-project`](.agents/skills/start-project/SKILL.md) | Explicit | Initialize a new, uninitialized derived project from the retained setup guidance. |
+| [`review-project`](.agents/skills/review-project/SKILL.md) | Explicit | Produce a comprehensive neutral inventory of project state and evidence gaps. |
+| [`sync-template`](.agents/skills/sync-template/SKILL.md) | Explicit | Compare a derived project with its verified source template and adopt selected updates while preserving project adaptations. |
+| [`check-consistency`](.agents/skills/check-consistency/SKILL.md) | Explicit | Diagnose internal contradictions between intent, roadmap, decisions, content and documentation; develop bounded options. |
+| [`perform-retrospective`](.agents/skills/perform-retrospective/SKILL.md) | Explicit | Review collaboration evidence and distinguish project findings from reusable template or family candidates. |
+| [`create-local-project`](.agents/skills/create-local-project/SKILL.md) | Explicit | Create a local derived repository from this source template and hand it over to initialization; removed after successful project setup. |
+| [`commit-milestone`](.agents/skills/commit-milestone/SKILL.md) | Explicit | Close a reviewed milestone with metadata, comprehensive applicable checks, a commit and normal upstream push unless excluded. |
+
+### Optional Planning Skills
+
+`grill-me` and `grilling` are adopted MIT-licensed skills by Matt Pocock.
+They complement the repository's own skills and are used only after explicit
+selection. The normal lean initialization path remains available.
+
+| Skill | Invocation | Purpose |
+| --- | --- | --- |
+| [`grill-me`](.agents/skills/grill-me/SKILL.md) | Explicit | Start the optional intensive planning interview and route it to `grilling`. |
+| [`grilling`](.agents/skills/grilling/SKILL.md) | Explicit | Explore a plan, decision or idea through detailed interview rounds; use only after explicit opt-in. |
 
 ## External Files and Sources
 
@@ -193,7 +247,7 @@ The maintainer controls Git history, normally through GitHub Desktop. Assistants
 
 Staging and unstaging are index operations. They do not require a control word, but they may be performed only after a specific maintainer request or authorization of the corresponding commit. Existing staged selections and unrelated changes must be preserved.
 
-Protected actions include commits, amendments, tags, pushes, pulls, merges, rebases, resets, branch changes, stash manipulation and other Git history operations. An assistant may perform a specific protected action only when the instruction for that action contains `explicit` or `explicitly` in English, or the German word family `explizit`. File-edit approval does not authorize Git history changes, and approval for one protected action does not authorize another.
+Protected actions include commits, amendments, tags, pushes, pulls, merges, rebases, resets, branch changes, stash manipulation and other Git history operations. An assistant may perform a specific protected action only when the instruction for that action contains `explicit` or `explicitly` in English, or the German word family `explizit`. File-edit approval does not authorize Git history changes, and other protected actions remain separately authorized, with the commit-and-push workflow above as the specific exception.
 
 When this rule requires authorization, the assistant proposes one minimum-scope,
 copy-ready instruction naming the exact action, repository and material
@@ -230,14 +284,11 @@ Templates live in [decisions/](decisions/). Create a record when future maintain
 ### Setup, Continuation and Review
 
 - **`PROJECT_SETUP.md`** guides the first initialization and preserves its methodological baseline. `$start-project` is the explicit executable entry point.
-- **`.agents/skills/`** contains lean automatic task lifecycle, commit and
-  environment-troubleshooting workflows plus explicit initialization, review,
-  synchronization, consistency and retrospective workflows. The `$grill-me`
-  path and its `grilling` primitive are explicit-only and never replace the
-  normal lean initialization.
-- **`TROUBLESHOOTING.md`** stores portable focused-resolution problems and
-  verified repairs; ignored `TROUBLESHOOTING.local.md` stores host-specific
-  facts. A quick exit loads or records neither.
+- **`.agents/skills/`** contains the workflows and invocation rules described in
+  [Collaboration Skills](#collaboration-skills).
+- **`TROUBLESHOOTING.md`** retains confirmed corrections and concise prevention
+  for `reuse-fixes` in this repository. Host facts remain ignored in
+  `TROUBLESHOOTING.local.md`. Other repositories are not included.
 - **`TASK_HANDOFF.md`** carries the compact versioned task checkpoint across
   sessions and computers without duplicating project history.
 - **`IDEAS.md`** is a source-template backlog for reusable engineering
