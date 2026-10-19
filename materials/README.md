@@ -28,3 +28,12 @@ Examples include sanitized reproduction files, transformed exports, reviewed
 screenshots and retained diagnostic extracts. Disposable build products,
 caches and runtime files remain outside this component. A material promoted to
 source, tests, fixtures or configuration keeps its cataloged provenance.
+
+## Question research
+
+Retain question research reports and optional datasets as separately cataloged
+materials, normally under ignored `local/research/`. Use the
+[report scaffold](../templates/RESEARCH_REPORT.md) for concrete questions,
+individual source assessments with evidence/reasons/dates, methods and limits.
+Keep prior report/source references when later assessments change. New data
+retain schema and record/field provenance; publication remains separate.
