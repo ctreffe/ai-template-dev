@@ -12,7 +12,7 @@ Records; detailed methods belong in the relevant domain documents.
 - **Source template:** AI Dev Template
 - **Initial template baseline:** `<version and commit>`
 - **Initialization:** `<not started | in progress | completed; date>`
-- **Last template harmonization:** `<not yet | baseline and date>`
+- **Last template harmonization:** `<not yet | date and TEMPLATE_SYNC.md record>`
 - **Last retrospective:** `<not yet | reviewed period, date and record>`
 - **Intentional deviations:** `<none | concise list and Decision Records>`
 
@@ -114,14 +114,23 @@ of expanding their rationale here.
 
 Remove or adapt entries that do not apply.
 
-## Next Session
+## Task continuation
 
-- **Objective:** `<one coherent next objective>`
-- **Start from:** `<exact baseline and active artifacts>`
-- **Preserve:** `<user work, inputs, selections and non-goals>`
-- **Checks pending:** `<specific checks>`
-- **Next action:** `<single practical step>`
+Use [TASK_HANDOFF.md](TASK_HANDOFF.md) for the bounded task objective, exact
+artifacts, pending checks, scope limits and next action. Update project context
+only when intent, durable constraints or the current roadmap changes. Retain
+domain-specific evidence/access limits in their authoritative sections above.
+Protected Git actions and publication retain separate authorization.
 
-Update this file after material state changes and before a long-session handoff.
-Feature and milestone commits remain separate; protected Git actions require
-their own explicit authorization.
+## State ownership and template synchronization
+
+| State | Authoritative owner |
+| --- | --- |
+| Project intent, constraints and current roadmap | PROJECT_CONTEXT.md |
+| Current bounded task checkpoint and next task action | TASK_HANDOFF.md |
+| Selected upstream comparison, adoption and deferred changes | [TEMPLATE_SYNC.md](TEMPLATE_SYNC.md), only when sync is selected |
+| Durable rationale and completed history | Decision Records and CHANGELOG.md |
+
+Keep the last-harmonization field above as a date/summary pointer to the sync
+record, not a second adoption ledger. Task completion does not close unrelated
+project or document work. Preserve context owned by another active objective.
