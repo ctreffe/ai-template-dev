@@ -77,6 +77,14 @@ For new projects, it should capture the maintainer's project intent, problem con
 workflows plus explicit initialization, neutral review, source-template
 synchronization, internal consistency and retrospective workflows.
 
+`review-code` explains existing code or changes in interactive rounds;
+`test-code` executes an explicitly agreed bounded plan with one ignored local
+report. Neither replaces routine targeted validation. For requested setup,
+`setup-test-environment` reuses a portable environment definition before asking
+new questions. Use [TEST_ENVIRONMENT.md](templates/TEST_ENVIRONMENT.md) for
+project-owned recipes and [TEST_REPORT.md](templates/TEST_REPORT.md) for local
+test evidence. Readiness, operational results and source fixes remain separate.
+
 `TASK_HANDOFF.md` is the compact versioned checkpoint for current task state.
 
 ## CHANGELOG.md

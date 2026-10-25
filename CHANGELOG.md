@@ -6,7 +6,10 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
-No unreleased changes.
+- Add review-code, test-code and setup-test-environment under Governance
+  TVDR-0063, with interactive review rounds, one ignored report per agreed test
+  plan and portable environment recipes. Keep routine validation, readiness,
+  operational testing and source-edit authority separate.
 
 ## [1.7.0] - 2026-10-19
 

@@ -58,6 +58,10 @@ Resident contract.
 - Invoke `investigate-question` deliberately by name for concrete project
   questions and a saved report with individual source assessments; ordinary
   entry/handoff does not trigger research or broaden local access.
+- Invoke `review-code` and `test-code` deliberately for interactive code review
+  and agreed operational testing. Use `setup-test-environment` for requested
+  setup from a portable definition; readiness does not start operational tests.
+  Routine targeted validation does not require these workflows.
 
 ## Validation
 

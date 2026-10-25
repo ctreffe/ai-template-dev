@@ -170,6 +170,9 @@ lies bei Bedarf nur den passenden Detailabschnitt.
 | [`reuse-fixes`](.agents/skills/reuse-fixes/SKILL.md) | Agent oder explizit | Verwendet bestätigte Lösungen dieses Repositorys wieder, hält knappe Vorbeugung fest und fragt nur bei fehlender Freigabe oder blockierenden Entscheidungen nach. |
 | [`start-project`](.agents/skills/start-project/SKILL.md) | Explizit | Initialisiert ein neues, noch nicht eingerichtetes abgeleitetes Projekt anhand der erhaltenen Setup-Leitlinien. |
 | [`review-project`](.agents/skills/review-project/SKILL.md) | Explizit | Erstellt eine umfassende neutrale Bestandsaufnahme des Projektzustands und der Evidenzlücken. |
+| [`review-code`](.agents/skills/review-code/SKILL.md) | Explizit | Erklärt bestehenden Code oder Änderungen in nummerierten Runden, gewöhnlich vier Blöcken, und wartet auf Rückmeldung. |
+| [`test-code`](.agents/skills/test-code/SKILL.md) | Explizit | Stimmt einen abgegrenzten Testplan ab und erhält Versuche sowie Fehler in einem ignorierten lokalen Bericht. |
+| [`setup-test-environment`](.agents/skills/setup-test-environment/SKILL.md) | Agent oder explizit | Definiert oder rekonstruiert eine angefragte Testumgebung; trennt Betriebsbereitschaft von operativen Tests. |
 | [`manage-external-storage`](.agents/skills/manage-external-storage/SKILL.md) | Explizit | Richtet optionalen externen Speicher ein, bindet einen Host an oder prüft ausgewählte lokale Dateien. |
 | [`investigate-question`](.agents/skills/investigate-question/SKILL.md) | Explizit | Recherchiert konkrete Projektfragen, bewertet jede verwendete Quelle und speichert einen [Recherchebericht](templates/RESEARCH_REPORT.md) mit optionalen Daten. |
 | [`sync-template`](.agents/skills/sync-template/SKILL.md) | Explizit | Vergleicht ein abgeleitetes Projekt mit seinem verifizierten Quelltemplate und übernimmt ausgewählte Änderungen unter Erhalt der Projektanpassungen. |
