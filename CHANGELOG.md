@@ -6,6 +6,11 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+- Add explicit-only manage-restricted-storage under Governance TVDR-0065,
+  with metadata/state templates and separate setup/protection results. Preserve
+  source/fixture/runtime ownership; storage work does not launch applications,
+  provision environments or invoke operational tests.
+
 - Add review-code, test-code and setup-test-environment under Governance
   TVDR-0063, with interactive review rounds, one ignored report per agreed test
   plan and portable environment recipes. Keep routine validation, readiness,

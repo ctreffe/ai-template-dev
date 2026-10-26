@@ -174,6 +174,7 @@ lies bei Bedarf nur den passenden Detailabschnitt.
 | [`test-code`](.agents/skills/test-code/SKILL.md) | Explizit | Stimmt einen abgegrenzten Testplan ab und erhält Versuche sowie Fehler in einem ignorierten lokalen Bericht. |
 | [`setup-test-environment`](.agents/skills/setup-test-environment/SKILL.md) | Agent oder explizit | Definiert oder rekonstruiert eine angefragte Testumgebung; trennt Betriebsbereitschaft von operativen Tests. |
 | [`manage-external-storage`](.agents/skills/manage-external-storage/SKILL.md) | Explizit | Richtet optionalen externen Speicher ein, bindet einen Host an oder prüft ausgewählte lokale Dateien. |
+| [`manage-restricted-storage`](.agents/skills/manage-restricted-storage/SKILL.md) | Explizit | Verwaltet einen gesperrten Bereich und freigegebene Metadaten unter Wahrung der Fixture-, Laufzeit- und Effektgrenzen. |
 | [`investigate-question`](.agents/skills/investigate-question/SKILL.md) | Explizit | Recherchiert konkrete Projektfragen, bewertet jede verwendete Quelle und speichert einen [Recherchebericht](templates/RESEARCH_REPORT.md) mit optionalen Daten. |
 | [`sync-template`](.agents/skills/sync-template/SKILL.md) | Explizit | Vergleicht ein abgeleitetes Projekt mit seinem verifizierten Quelltemplate und übernimmt ausgewählte Änderungen unter Erhalt der Projektanpassungen. |
 | [`check-consistency`](.agents/skills/check-consistency/SKILL.md) | Explizit | Diagnostiziert interne Widersprüche zwischen Intention, Roadmap, Entscheidungen, Inhalten und Dokumentation und entwickelt abgegrenzte Optionen. |

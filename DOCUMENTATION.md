@@ -85,6 +85,12 @@ new questions. Use [TEST_ENVIRONMENT.md](templates/TEST_ENVIRONMENT.md) for
 project-owned recipes and [TEST_REPORT.md](templates/TEST_REPORT.md) for local
 test evidence. Readiness, operational results and source fixes remain separate.
 
+`manage-restricted-storage` is explicit-only for restricted-area setup and
+approved metadata maintenance, with separate protection evidence. Its
+[guide](RESTRICTED_STORAGE.md), [catalog](templates/RESTRICTED_CATALOG.md) and
+[state example](templates/RESTRICTED_STORAGE.local.example.md) preserve runtime,
+fixture and effect boundaries; storage work does not start operational tests.
+
 `TASK_HANDOFF.md` is the compact versioned checkpoint for current task state.
 
 ## CHANGELOG.md

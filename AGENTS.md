@@ -62,6 +62,9 @@ Resident contract.
   and agreed operational testing. Use `setup-test-environment` for requested
   setup from a portable definition; readiness does not start operational tests.
   Routine targeted validation does not require these workflows.
+- Invoke `manage-restricted-storage` deliberately for optional area setup,
+  approved metadata maintenance or invented-only protection checks. Preserve
+  fixture/runtime/effect rules; metadata access grants no source or test access.
 
 ## Validation
 

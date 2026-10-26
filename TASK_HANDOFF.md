@@ -5,42 +5,39 @@ Date: 2026-10-25
 
 ## Outcome
 
-Implemented source-template IDEA-0001–0003 under Governance TVDR-0063:
-review-code, test-code and setup-test-environment. Review and operational tests
-require deliberate invocation; setup can be selected for a requested setup task.
-Interactive review defaults to four blocks per round, with agreed overrides and
-snapshot-bound acceptance. One ignored report retains all agreed attempts per
-test plan; a material expansion creates a linked new plan. Definition-first
-setup separates preparation, start, readiness and stop/retention from testing.
+Implemented explicit-only manage-restricted-storage under Governance TVDR-0065.
+The generic contract gains engineering adaptations for fixtures, logs, dumps,
+API responses, local databases, runtime/environment ownership and effect
+approvals. Storage setup never starts an application/build hook, provisions a
+test environment or invokes operational tests. A readable metadata catalog
+grants no source, fixture, runtime or external-effect permission.
 
-Added portable TEST_ENVIRONMENT.md and TEST_REPORT.md templates, resident
-routing, documentation and bilingual discovery; promoted the three ideas and
-updated the changelog. Runners, cases and effects remain project-owned. Ordinary
-targeted validation does not require the new skills.
+Added RESTRICTED_STORAGE.md, blank catalog/local-state templates, ignored
+populated-state rule, repository/storage guidance, deliberate routing, bilingual
+discovery and changelog. The area dialogue retains project-owned execution,
+protection scope and metadata detail. Layout, catalog, configuration and tested
+protection have separate results; failed and stale evidence stays visible.
+Existing TVDR-0063 review-code, test-code and setup-test-environment workflows
+and their templates remain intact and separately governed.
 
 ## Evidence and limits
 
-All three skills passed the owning Test-CodexSkill.ps1 wrapper. The existing
-Governance interpreter supplied the pinned PyYAML 6.0.3 via -PythonPath after
-readiness verification; no installation or environment creation was needed.
-Invocation metadata and new skill/template local links passed; git check-ignore confirmed the proposed
-test-report and environment-host-record paths are ignored.
+The owning skill wrapper passed with the existing Governance interpreter and
+pinned PyYAML 6.0.3; no installation was needed. Eleven new local links, four
+Markdown tables, explicit-only policy and proposed state/catalog ignore paths
+passed. The selected Governance/Analysis/Project/Dev topology check passed.
+Source review covered metadata-only access, repeated setup avoidance,
+unknown/failed/stale protection and the engineering execution/data boundary.
 
-Source review covered revision changes between rounds, retained failed attempts,
-material plan expansion, missing installation authority, existing-definition
-reuse and readiness without operational tests. These are source-level checks,
-not live or independent skill trials. Browser/concurrency testing, first setup
-execution, fresh-host reconstruction and comprehensive milestone/family gates
-were not run. No whitespace, build or full test suite was selected for these
-instruction/document changes. The previous v1.7.0 milestone evidence remains
-in Governance MILESTONE_2026-10-19.md and OPTIMIZATION_IMPLEMENTATION.md.
+No independent agent run, live canary/profile, actual restricted area, provider,
+application/test environment, ACL or credential work occurred. Full engineering,
+milestone/family and whitespace gates were not selected for these source
+instructions. No derived project or real input was inspected or changed.
+Prior code/test workflow evidence is retained in Governance TVDR-0063.
 
 ## Continuation and boundary
 
-No selected source implementation remains. Project-owned operational trials
-and deliberate derived-project adoption remain future work. Existing backlog
-intake was retained and promoted, not replaced with originating-project files.
-No derived-project access or actual environment provisioning is included. The
-maintainer separately authorized this scoped ordinary commit and its normal
-verified-upstream push. Later versioning uses live Git state. Tags, version
-bumps, releases and publication remain outside this authorization.
+No selected source implementation remains. Live adapter checks, provider/device
+behavior and actual project adoption remain separately scoped work. GEMI tests
+remain maintainer-owned and were not repeated. No staging, commit, push, tag,
+version change, release or publication is included; later versioning uses Git.

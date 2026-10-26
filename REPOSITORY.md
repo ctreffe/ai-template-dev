@@ -184,6 +184,12 @@ materials.
 
 # External Files, Fixtures and Generated Outputs
 
+Optional [restricted storage](RESTRICTED_STORAGE.md) retains approved metadata
+outside the denied content area. Register only its readable catalog artifact
+as a material; referenced logs, dumps, databases and other restricted inputs
+remain inaccessible. A mapping, catalog or passing protection check grants no
+fixture, runtime, build/test execution or external-effect authority.
+
 Use `input/intake/`, `input/restricted/`, `input/local/` and
 `input/versioned/` to classify external files and sources. Record safe
 provenance and handling decisions in `input/CATALOG.md`; use the ignored

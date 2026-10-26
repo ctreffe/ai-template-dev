@@ -166,6 +166,7 @@ read only a matching detail section when needed.
 | [`test-code`](.agents/skills/test-code/SKILL.md) | Explicit | Agree a bounded test plan and retain attempts and failures in one ignored local report. |
 | [`setup-test-environment`](.agents/skills/setup-test-environment/SKILL.md) | Agent or explicit | Define or reconstruct a requested test environment; distinguish readiness from operational tests. |
 | [`manage-external-storage`](.agents/skills/manage-external-storage/SKILL.md) | Explicit | Set up optional external storage, connect a host or check selected local files. |
+| [`manage-restricted-storage`](.agents/skills/manage-restricted-storage/SKILL.md) | Explicit | Manage a restricted area and approved metadata while preserving fixture, runtime and effect boundaries. |
 | [`investigate-question`](.agents/skills/investigate-question/SKILL.md) | Explicit | Investigate concrete project questions, assess each used source and save a [research report](templates/RESEARCH_REPORT.md) with optional data. |
 | [`sync-template`](.agents/skills/sync-template/SKILL.md) | Explicit | Compare a derived project with its verified source template and adopt selected updates while preserving project adaptations. |
 | [`check-consistency`](.agents/skills/check-consistency/SKILL.md) | Explicit | Diagnose internal contradictions between intent, roadmap, decisions, content and documentation; develop bounded options. |
