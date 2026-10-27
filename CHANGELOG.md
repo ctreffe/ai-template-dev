@@ -6,6 +6,10 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+- Recommend optional purpose-first AI-assisted branch names under Governance
+  TVDR-0066: `<type>/ai-dev/<topic>`. Preserve existing project conventions,
+  direct-to-main work and separate protected Git authority; promote IDEA-0004.
+
 - Add explicit-only manage-restricted-storage under Governance TVDR-0065,
   with metadata/state templates and separate setup/protection results. Preserve
   source/fixture/runtime ownership; storage work does not launch applications,

@@ -1,43 +1,40 @@
 # Task handoff
 
 Status: completed
-Date: 2026-10-25
+Date: 2026-10-27
 
 ## Outcome
 
-Implemented explicit-only manage-restricted-storage under Governance TVDR-0065.
-The generic contract gains engineering adaptations for fixtures, logs, dumps,
-API responses, local databases, runtime/environment ownership and effect
-approvals. Storage setup never starts an application/build hook, provisions a
-test environment or invokes operational tests. A readable metadata catalog
-grants no source, fixture, runtime or external-effect permission.
+Implemented the optional branch-naming recommendation under Governance
+TVDR-0066. REPOSITORY.md recommends `<type>/ai-dev/<topic>` with feature, fix,
+docs and chore types for projects without their own convention. Existing rules
+take priority; projects may adopt/adapt through their own Decision Records.
+Task-entry and commit workflows consult the convention when proposing names.
+No extra initialization question or standalone skill was introduced.
 
-Added RESTRICTED_STORAGE.md, blank catalog/local-state templates, ignored
-populated-state rule, repository/storage guidance, deliberate routing, bilingual
-discovery and changelog. The area dialogue retains project-owned execution,
-protection scope and metadata detail. Layout, catalog, configuration and tested
-protection have separate results; failed and stale evidence stays visible.
-Existing TVDR-0063 review-code, test-code and setup-test-environment workflows
-and their templates remain intact and separately governed.
+Retained direct-to-main work, existing branch names, contribution-specific
+commit/PR disclosures and separate protected Git authority. Promoted IDEA-0004
+and updated the changelog, preserving the pre-existing sanitized intake/source
+fields. Earlier code/test/storage implementations remain governed separately
+by TVDR-0063/0065. Governance's fixture recovery prototype under TVDR-0067
+does not add a Dev permission adapter.
 
 ## Evidence and limits
 
-The owning skill wrapper passed with the existing Governance interpreter and
-pinned PyYAML 6.0.3; no installation was needed. Eleven new local links, four
-Markdown tables, explicit-only policy and proposed state/catalog ignore paths
-passed. The selected Governance/Analysis/Project/Dev topology check passed.
-Source review covered metadata-only access, repeated setup avoidance,
-unknown/failed/stale protection and the engineering execution/data boundary.
+Source review confirmed the optional/configurable rule, four types, examples,
+lowercase topic guidance, convention precedence and naming/authority boundary.
+Seven local Markdown targets passed across REPOSITORY.md, IDEAS.md and
+CHANGELOG.md using Governance's link helper with the exact Dev allowed root.
+The reviewed diff retains the pre-existing IDEA-0004 provenance.
 
-No independent agent run, live canary/profile, actual restricted area, provider,
-application/test environment, ACL or credential work occurred. Full engineering,
-milestone/family and whitespace gates were not selected for these source
-instructions. No derived project or real input was inspected or changed.
-Prior code/test workflow evidence is retained in Governance TVDR-0063.
+No runtime, engineering or broad milestone/family/whitespace checks were needed
+or run for this documentation change. No skill changed, so its validator was
+not applicable. No project, branch creation/rename, source-code runtime, real
+data or live permission configuration was inspected or changed.
 
 ## Continuation and boundary
 
-No selected source implementation remains. Live adapter checks, provider/device
-behavior and actual project adoption remain separately scoped work. GEMI tests
-remain maintainer-owned and were not repeated. No staging, commit, push, tag,
-version change, release or publication is included; later versioning uses Git.
+No selected source implementation remains. Existing projects can select local
+adoption later; none were synchronized. Protected Git actions, version changes,
+release and publication are outside scope. Later versioning uses live Git state
+and separately scoped authority.

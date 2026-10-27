@@ -145,6 +145,28 @@ For projects with multiple active human contributors, branches and pull requests
 
 The workflow should remain as simple as possible while preserving a clean and understandable project history.
 
+## Optional names for AI-assisted work branches
+
+When a project has no adopted branch-naming convention, recommend
+`<type>/ai-dev/<topic>` for AI-assisted work branches. Use `feature`, `fix`,
+`docs` or `chore` for the primary purpose and a short lowercase kebab-case topic,
+for example `feature/ai-dev/new-component` or `fix/ai-dev/session-routing`.
+The topic contains no slash or leading/trailing hyphen. Put the purpose first
+to group related work; `ai-dev` identifies human-AI collaboration independently
+of the assistant used.
+
+This is an optional, configurable recommendation. Existing project conventions
+take priority. Adopt or adapt it in this section and use the project's Decision
+Record process for a durable local choice; no extra initialization interview is
+required. Before proposing a branch name, task-entry and commit workflows read
+the current convention here. Follow it instead of an assistant-specific naming
+default.
+
+Keep existing branches and `main`/`master` names. Naming grants no branch
+creation, rename or other protected Git authority; obtain that separately under
+AGENTS.md. The marker supplements the contribution-specific commit and PR
+disclosures described in COLLABORATION.md. Source decision: Governance TVDR-0066.
+
 ---
 
 # Commit Messages
