@@ -104,10 +104,10 @@ For a project that should remain local and have no remote, invoke
 the destination, creates an independent local clone without a remote and then
 invokes `$start-project`; it is not a second initialization.
 After successful initialization, inherited template history in `CHANGELOG.md`
-and `TASK_HANDOFF.md` is replaced with project-owned state. The template-only
-`IDEAS.md`, the project's copy of `$create-local-project` and their references
-are removed unless a project-local idea backlog is deliberately established.
-The initialization files remain as provenance.
+and `TASK_HANDOFF.md` becomes project-owned state. `IDEAS.md` becomes an empty
+project-owned backlog, preserving any already authored project ideas. Remove
+the project's copy of `$create-local-project` and its template-only references.
+Setup documents remain as provenance.
 
 During initialization, the inherited `README.md` and `README.de.md` become
 `TEMPLATE_README.md` and `TEMPLATE_README.de.md`. They remain available as
@@ -159,6 +159,7 @@ read only a matching detail section when needed.
 | [`handoff-task`](.agents/skills/handoff-task/SKILL.md) | Agent or explicit | Save the task outcome, evidence and next step in a compact `TASK_HANDOFF.md`. |
 | [`commit-changes`](.agents/skills/commit-changes/SKILL.md) | Agent or explicit | Create an ordinary scoped commit and perform its normal upstream push with explicit commit authorization, unless push is excluded. |
 | [`record-decision`](.agents/skills/record-decision/SKILL.md) | Agent or explicit | Document a durable decision using the applicable record type; source-template decisions route to Governance. |
+| [`record-idea`](.agents/skills/record-idea/SKILL.md) | Agent or explicit | Capture existing ideas on a clear retention request in the owning backlog; transfer authority remains separate. |
 | [`reuse-fixes`](.agents/skills/reuse-fixes/SKILL.md) | Agent or explicit | Reuse this repository's confirmed fixes, retain concise prevention and ask only for missing authority or blocking decisions. |
 | [`start-project`](.agents/skills/start-project/SKILL.md) | Explicit | Initialize a new, uninitialized derived project from the retained setup guidance. |
 | [`review-project`](.agents/skills/review-project/SKILL.md) | Explicit | Produce a comprehensive neutral inventory of project state and evidence gaps. |
@@ -170,7 +171,7 @@ read only a matching detail section when needed.
 | [`investigate-question`](.agents/skills/investigate-question/SKILL.md) | Explicit | Investigate concrete project questions, assess each used source and save a [research report](templates/RESEARCH_REPORT.md) with optional data. |
 | [`sync-template`](.agents/skills/sync-template/SKILL.md) | Explicit | Compare a derived project with its verified source template and adopt selected updates while preserving project adaptations. |
 | [`check-consistency`](.agents/skills/check-consistency/SKILL.md) | Explicit | Diagnose internal contradictions between intent, roadmap, decisions, content and documentation; develop bounded options. |
-| [`perform-retrospective`](.agents/skills/perform-retrospective/SKILL.md) | Explicit | Review collaboration evidence and distinguish project findings from reusable template or family candidates. |
+| [`perform-retrospective`](.agents/skills/perform-retrospective/SKILL.md) | Explicit | Jointly develop improvement ideas from an agreed project period; record-idea handles selected capture. |
 | [`create-local-project`](.agents/skills/create-local-project/SKILL.md) | Explicit | Create a local derived repository from this source template and hand it over to initialization; removed after successful project setup. |
 | [`commit-milestone`](.agents/skills/commit-milestone/SKILL.md) | Explicit | Close a reviewed milestone with metadata, comprehensive checks, a commit, annotated version tag and exact upstream pushes unless excluded. |
 
@@ -314,9 +315,10 @@ Templates live in [decisions/](decisions/). Create a record when future maintain
   `TROUBLESHOOTING.local.md`. Other repositories are not included.
 - **`TASK_HANDOFF.md`** carries the compact versioned task checkpoint across
   sessions and computers without duplicating project history.
-- **`IDEAS.md`** is a source-template backlog for reusable engineering
-  candidates and is removed during normal project initialization unless a
-  project-local backlog is deliberately retained.
+- **`IDEAS.md`** retains possibilities separately from roadmap and decisions.
+  New projects start with their own backlog without inherited template ideas;
+  existing project ideas are preserved. `record-idea` captures existing ideas,
+  while `perform-retrospective` develops them jointly from project experience.
 
 ### Decisions, External Inputs and Project-Specific Code
 

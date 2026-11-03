@@ -66,6 +66,9 @@ Resident contract.
   approved metadata maintenance or invented-only protection checks. Preserve
   fixture/runtime/effect rules; metadata access grants no source or test access.
 
+- Use `record-idea` for a clear request to retain or update an idea; discussion
+  alone does not trigger capture. Retrospective discovery remains explicit.
+
 ## Validation
 
 Codex skill edits use `scripts/Test-CodexSkill.ps1`; on first use follow

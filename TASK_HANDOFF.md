@@ -1,40 +1,45 @@
 # Task handoff
 
 Status: completed
-Date: 2026-10-27
+Date: 2026-11-03
 
 ## Outcome
 
-Implemented the optional branch-naming recommendation under Governance
-TVDR-0066. REPOSITORY.md recommends `<type>/ai-dev/<topic>` with feature, fix,
-docs and chore types for projects without their own convention. Existing rules
-take priority; projects may adopt/adapt through their own Decision Records.
-Task-entry and commit workflows consult the convention when proposing names.
-No extra initialization question or standalone skill was introduced.
+Adopted Governance TVDR-0070 for this source template: implicit-capable
+record-idea captures existing ideas on a clear retention request; explicit
+perform-retrospective jointly develops improvements from an agreed period.
+Intake owns stable IDs, one authoritative owner, verified destinations and
+authorized/pending cross-repository transfers. Capture does not approve work.
 
-Retained direct-to-main work, existing branch names, contribution-specific
-commit/PR disclosures and separate protected Git authority. Promoted IDEA-0004
-and updated the changelog, preserving the pre-existing sanitized intake/source
-fields. Earlier code/test/storage implementations remain governed separately
-by TVDR-0063/0065. Governance's fixture recovery prototype under TVDR-0067
-does not add a Dev permission adapter.
+Added an empty templates/IDEAS.md project scaffold. Successful initialization
+replaces only verified inherited template entries and preserves authored project
+ideas/local edits. Selected sync can adopt a missing project backlog without
+importing template ideas or rerunning initialization. Existing projects are
+outside this rollout. Updated routing, collaboration, bilingual guidance, path
+example and changelog; existing source-template idea entries are unchanged.
+
+Engineering evidence, architecture, tests and release authority remain intact.
 
 ## Evidence and limits
 
-Source review confirmed the optional/configurable rule, four types, examples,
-lowercase topic guidance, convention precedence and naming/authority boundary.
-Seven local Markdown targets passed across REPOSITORY.md, IDEAS.md and
-CHANGELOG.md using Governance's link helper with the exact Dev allowed root.
-The reviewed diff retains the pre-existing IDEA-0004 provenance.
+All four changed/new skills passed this repository's Test-CodexSkill.ps1 wrapper
+using the existing managed Governance interpreter and pinned PyYAML 6.0.3;
+no installation. Governance's focused contracts and skill topology passed for
+this source and all selected sources on PowerShell 7 and Windows PowerShell 5.1.
+The focused contract check includes ten safety/intent omission cases.
+Git-baseline comparison confirms this source's idea-history section is intact.
+Targeted Markdown validation included all affected source paths; its coordinated
+result is 600 targets/93 files with two out-of-scope anchors unverified.
+Governance IDEA_WORKFLOW.md owns the impact matrix and detailed source review.
 
-No runtime, engineering or broad milestone/family/whitespace checks were needed
-or run for this documentation change. No skill changed, so its validator was
-not applicable. No project, branch creation/rename, source-code runtime, real
-data or live permission configuration was inspected or changed.
+No live agent trial, retrospective session, derived initialization or real
+idea transfer was performed. Domain runtime/data/render checks are not
+applicable. Full family, whitespace, ordinary-commit, release and milestone
+gates were not run. No unrelated source work or protected Git action is included.
 
-## Continuation and boundary
+## Continuation and versioning boundary
 
-No selected source implementation remains. Existing projects can select local
-adoption later; none were synchronized. Protected Git actions, version changes,
-release and publication are outside scope. Later versioning uses live Git state
-and separately scoped authority.
+No implementation remains for this selected source rollout. Existing-project
+adoption requires a selected project-owned task/sync; source availability is not
+behavioral qualification. Later versioning decisions use live Git state and
+repository/action-specific authority.

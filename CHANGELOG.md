@@ -6,6 +6,12 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+- Adopt TVDR-0070: add implicit-capable record-idea, separate idea capture from
+  collaborative retrospective discovery, and provide empty project-owned idea
+  backlogs at successful initialization. Preserve existing ideas, local domain
+  boundaries and exact cross-repository transfer authority; existing projects
+  require selected adoption.
+
 - Recommend optional purpose-first AI-assisted branch names under Governance
   TVDR-0066: `<type>/ai-dev/<topic>`. Preserve existing project conventions,
   direct-to-main work and separate protected Git authority; promote IDEA-0004.
