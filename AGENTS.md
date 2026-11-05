@@ -63,7 +63,7 @@ Resident contract.
   setup from a portable definition; readiness does not start operational tests.
   Routine targeted validation does not require these workflows.
 - Invoke `manage-restricted-storage` deliberately for optional area setup,
-  approved metadata maintenance or invented-only protection checks. Preserve
+  approved metadata maintenance or selected project profile work. Preserve
   fixture/runtime/effect rules; metadata access grants no source or test access.
 
 - Use `record-idea` for a clear request to retain or update an idea; discussion
