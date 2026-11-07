@@ -271,6 +271,14 @@ Reference material should be kept accurate and easy to verify. If a project expo
 
 Use precise, technical language.
 
+Write as long as necessary and as short as possible for the purpose and audience.
+Understanding takes priority over brevity. Keep necessary reasoning, evidence
+and examples; remove repetition, digressions and irrelevant implementation detail.
+Concision is not a word-count target or telegraphic phrasing. When revising,
+preserve prerequisites, interface behavior, side effects, failure handling and
+verification needed to use or maintain the software. Explain non-obvious
+tradeoffs where they affect the reader's decision.
+
 Avoid promotional, exaggerated or marketing-oriented wording.
 
 Prefer clarity over persuasion.
