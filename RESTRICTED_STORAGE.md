@@ -85,3 +85,11 @@ environments or invoke `test-code`. Use the project's existing environment
 definition and separately approved setup/test scope when needed. Review the
 input/output, diagnostic and external-effect paths before any authorized
 execution of prepared code with protected access.
+
+## Profile usability completion
+
+Profile setup also qualifies the project's required workflows through the
+[usability procedure](.agents/skills/manage-restricted-storage/references/profile-usability.md).
+Retain separate protection and capability results, including exclusions and
+missing authority. Reuse matching current evidence. A configured profile alone
+does not complete this gate; ordinary task entry adds no recurring checks.
