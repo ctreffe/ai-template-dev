@@ -6,6 +6,12 @@ This project follows Semantic Versioning.
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-11-08
+
+- Simplify start-project through existing local setup/profile contracts while
+  retaining engineering/runtime, qualified Git routes and interrupted-setup
+  safeguards. No environment setup, operational testing or project adoption.
+
 - Assess coherent commit packages before staging in both commit skills under
   TVDR-0088. Preserve existing selections, validate meaningful intermediate
   states and retain one final milestone closure/tag; existing-project adoption
