@@ -7,6 +7,9 @@
 > [!NOTE]
 > **KI-Zusammenarbeit**
 >
+> Dieses Repository wird in Mensch-KI-Zusammenarbeit entwickelt und gepflegt.
+> Die fachliche Kontrolle bleibt beim Maintainer.
+>
 > Dieses Repository pflegt das AI Dev Template.
 >
 > Das AI Dev Template ist die entwicklungsorientierte Spezialisierung des generischen AI Project Template.
@@ -43,6 +46,9 @@
 - [Lizenz](#lizenz)
 
 ## Überblick
+
+Die [Template-Mission](PHILOSOPHY.md#template-mission) beschreibt Zweck,
+angestrebte Ergebnisse und Grenzen. Konkrete Projektziele bleiben beim Maintainer.
 
 Das AI Dev Template ist der Ausgangspunkt für entwicklungsorientierte Projekte mit Code, Skripten, Automatisierung, technischer Architektur, Validierung, Releases und benutzerorientierter technischer Dokumentation. Es stellt eine wiederverwendbare Repository-Grundlage und Kollaborationsmethode bereit, kein Programmierframework oder Anwendungsgerüst.
 
@@ -218,6 +224,12 @@ bleiben externer Speicher; Synchronisierung ist weder Git-Versionierung,
 Backup, Assistant-Zugriff noch Publikationsfreigabe.
 
 ## Temporäre Arbeitsdateien
+
+Temporäre Git-Worktrees bilden eine eigene Ausnahme: Sie liegen projektlokal
+unter ignoriertem `temp/`, vorzugsweise `temp/worktrees/`, bewahren den Chat-Kontext und
+sind von allgemeiner Bereinigung ausgenommen. Für die Versionierung ihrer
+Quelldateien gilt die normale Git-Autorisierung; siehe [Worktree-Regeln](COLLABORATION.md#project-anchor-and-temporary-worktrees).
+Die folgenden Regeln für Zwischendateien ersetzen diese Vereinbarung nicht.
 
 Verwende `temp/` für wegwerfbare Engineering-Zwischendateien. Alle Inhalte
 außerhalb von `temp/restricted/` sind für den Assistant lesbar; dieses
