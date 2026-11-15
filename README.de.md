@@ -135,7 +135,7 @@ Fortsetzung nach unterbrochenem Setup.
 
 ## Skills für die Zusammenarbeit
 
-Skills sind abgegrenzte Arbeitsabläufe in [`.agents/skills/`](.agents/skills/).
+Skills sind abgegrenzte Arbeitsabläufe in [`.agents/skills/`](.agents/skills).
 Sie führen den Agenten durch eine bestimmte Aufgabe und laden dafür die
 passenden Repository-Leitlinien. Rufe einen Skill im Chat mit `$skill-name`
 auf, zum Beispiel `$review-project`. Die verlinkten Skill-Dateien beschreiben
@@ -316,7 +316,7 @@ Wähle den Record-Typ nach dem Entscheidungsgegenstand:
 - **PDR — Project Decision Record:** Umfang, Roadmap, Zusammenarbeit, Datenschutz, Repository-Struktur, Release-Modell oder Governance.
 - **DDR — Documentation Decision Record:** Benutzerdokumentation, Referenzstruktur, Terminologie, Beispiele, Screenshots oder Dokumentations-QA.
 
-Vorlagen befinden sich in [decisions/](decisions/). Erstelle einen Record, wenn künftige Maintainer Kontext, Begründung und Konsequenzen benötigen; routinemäßige Implementierungsdetails gehören stattdessen in Code, Tests oder gewöhnliche Dokumentation.
+Vorlagen befinden sich in [decisions/](decisions). Erstelle einen Record, wenn künftige Maintainer Kontext, Begründung und Konsequenzen benötigen; routinemäßige Implementierungsdetails gehören stattdessen in Code, Tests oder gewöhnliche Dokumentation.
 
 ## Repository-Struktur
 

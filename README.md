@@ -132,7 +132,7 @@ for the initialization and interrupted-setup contract.
 
 ## Collaboration Skills
 
-Skills are scoped workflows in [`.agents/skills/`](.agents/skills/). They guide
+Skills are scoped workflows in [`.agents/skills/`](.agents/skills). They guide
 the agent through a particular task and load the relevant repository guidance.
 Invoke a skill in chat with `$skill-name`, for example
 `$review-project`. The linked skill files describe each full workflow.
@@ -300,7 +300,7 @@ Choose the record type by decision subject:
 - **PDR — Project Decision Record:** scope, roadmap, collaboration, privacy, repository structure, release model or governance.
 - **DDR — Documentation Decision Record:** user documentation, reference structure, terminology, examples, screenshots or documentation QA.
 
-Templates live in [decisions/](decisions/). Create a record when future maintainers will need the context, rationale and consequences; routine implementation details belong in code, tests or ordinary documentation instead.
+Templates live in [decisions/](decisions). Create a record when future maintainers will need the context, rationale and consequences; routine implementation details belong in code, tests or ordinary documentation instead.
 
 ## Repository Structure
 

@@ -30,3 +30,10 @@ a local database. Document those exceptions in the catalog and protect them
 with path-specific ignore rules instead of moving them merely for uniformity.
 Files promoted into source, tests or configuration retain their recorded
 provenance.
+
+## Ordinary synchronized root
+
+Use repository-root storage.local.json for the ordinary external project area;
+input/materials PATHS.local.md files are for independent sources or explicit legacy
+migration only. Preserve domain overrides and existing access/provider limits.
+See SYNCHRONIZED_STORAGE.md at the repository root.
